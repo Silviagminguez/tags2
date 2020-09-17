@@ -28,7 +28,7 @@ agent any
 	    ) 
 	    }   
 	 }
-	 stage('Sonarqube') {
+	/* stage('Sonarqube') {
     		environment {
         	scannerHome = tool 'SonarQubeScanner'
     		}
@@ -36,7 +36,7 @@ agent any
        		 withSonarQubeEnv('SonarQube') {
            	 bat "${scannerHome}/bin/sonar-scanner -X"
        	    	}
-           }
+           }*/
    	 }
 
     }
