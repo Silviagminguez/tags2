@@ -36,8 +36,8 @@ agent any
        		 withSonarQubeEnv('SonarQube') {
            	 bat "${scannerHome}/bin/sonar-scanner -X"
        	    	}
-           }*/
-   	 }
+           }
+   	 }*/
 
     }
 }  
