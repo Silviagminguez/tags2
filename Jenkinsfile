@@ -55,9 +55,8 @@ agent any
 	                }
 		    if (tag2== "PRO"){
 	                echo "Estoy en PRO"
-	                }
-	             
-	        
+		    }    
+		}
             }
         }
     }
