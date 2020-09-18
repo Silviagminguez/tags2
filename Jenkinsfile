@@ -38,6 +38,24 @@ agent any
        	    	}
            }
    	 }*/
-
+	stage('Tag') {
+            steps {
+    		bat "git tag"
+    	 
+	        script{
+	            tag= bat(returnStdout:  true, script: "git describe").trim()
+	            echo "La tag es: ${tag}"
+	            tag2="${tag}".split("-")[2]
+	             echo "La tag2 es: ${tag2}"
+	             if (tag2== "QA"){
+	                
+	                }
+	             if (tag2== "DES"){
+	                
+	                }
+	             }
+	        
+            }
+        }
     }
 }  
